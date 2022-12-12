@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resposive Nav-Bar</title>
+    <style>
+      #nav-bar {
+        display: block;
+        text-align: center;
+        background-color: rgba(37, 16, 156, 0.733);
+        overflow: hidden;
+        float: left;
+        width: 100%;
+      }
+      a {
+        text-decoration: none;
+        padding: 10px 20px;
+      }
+      .hide:hover {
+        background-color: rgb(125, 165, 44);
+        border-radius: 5px;
+      }
+      #dropbtn:hover {
+        background-color: rgb(125, 165, 44);
+        border-radius: 5px;
+      }
+      .drop-contain:hover {
+        background-color: rgb(125, 165, 44);
+        border-radius: 5px;
+      }
+      #home {
+        background-color: cadetblue;
+        color: cyan;
+      }
+      .hide .icon {
+        display: none;
+      }
+      #drop {
+        overflow: hidden;
+        float: left;
+      } /* for diplay option bellow drop properlly */
+      .drop-contain {
+        text-decoration: none;
+        float: none;
+        color: darkgreen;
+        text-align: center;
+        padding: 10px 15px;
+        display: block;
+        z-index: 1;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        min-width: 160px;
+      }
+      #dropbtn {
+        text-decoration: none;
+        outline: none;
+        margin: 0;
+        border: none;
+        color: white;
+      }
+      .drop-contain a {
+        display: block;
+        align-items: left;
+        text-decoration: none;
+        float: none;
+        padding: 10px 16px;
+      }
+      .drop:hover .drop-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav-bar">
+      <h1 id="logo">LOGO</h1>
+      <a href="#home" class="hide" id="home">HOME</a>
+      <a href="#about" class="hide">ABOUT</a>
+      <a href="#reviews" class="hide">REVIEWS</a>
+      <div id="drop">
+        <button id="dropbtn">DROPDOWN</button>
+        <i class="fa fa-caret-down"></i>
+        <div class="drop-contain">
+          <a href="#">LINK1</a>
+          <a href="#">LINK2</a>
+          <a href="#">LINK3</a>
+        </div>
+      </div>
+      <a href="#login" class="hide" id="left">LOGIN</a>
+      <a
+        href="javascipt:void(0);"
+        size="font-size:15px;"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;></a
+      >
+    </div>
+    <script></script>
+  </body>
+</html>
